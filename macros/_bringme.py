@@ -146,7 +146,7 @@ config.targets.mapping = Item(
                                         },
                              )
 config.lang            = Section("Language section")
-config.lang.bring_me   = Item("bring me <target>",
+config.lang.bring_me   = Item("summon <target>",
                               doc="Command to bring a target;"
                                   " must contain the <target> extra.")
 config.lang.paste_me   = Item("paste me <target>",
