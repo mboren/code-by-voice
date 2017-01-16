@@ -1,0 +1,10 @@
+from dragonfly import *
+targets.mapping = {
+                    "oz": ssh("aws"),
+                    "mail": website("https://mail.google.com/mail/u/0/#inbox"),
+                    "macro folder": folder(r"C:\NatLink\NatLink\MacroSystem"),
+                    "globals macro": edit(r"C:\NatLink\NatLink\MacroSystem\_globals.py"),
+                    "vim wreck": edit(r"C:\Users\marty\_vimrc"),
+                    "dragonfly documentation": website("https://pythonhosted.org/dragonfly/actions.html"),
+                    "fugitive": website("https://github.com/yanick/cheatsheets/blob/master/vim/fugitive.mkd")
+                  }
