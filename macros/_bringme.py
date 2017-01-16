@@ -112,7 +112,7 @@ class open(BringableBase):
         os.startfile(target, self.verb)
 
 class ssh(BringableBase):
-    putty_path = r"C:\Program Files (x86)\PuTTY\putty"
+    putty_path = r"D:\kitty.exe"
     def bring_it(self):
         subprocess.Popen([self.putty_path, "-load", self.target])
 
