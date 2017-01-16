@@ -68,8 +68,8 @@ Using the configuration above would allow the user to say:
 try:
     import pkg_resources
     pkg_resources.require("dragonfly >= 0.6.5beta1.dev-r99")
-except ImportError:
-    pass
+except ImportError, ie:
+    print(ie)
 
 import os
 import os.path
