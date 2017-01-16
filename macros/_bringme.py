@@ -116,6 +116,10 @@ class ssh(BringableBase):
     def bring_it(self):
         subprocess.Popen([self.putty_path, "-load", self.target])
 
+class edit(BringableBase):
+    editor_path = r"C:\Program Files (x86)\Vim\vim80\gvim.exe"
+    def bring_it(self):
+        subprocess.Popen([self.editor_path, self.target])
 
 #---------------------------------------------------------------------------
 # Set up this module's configuration.
@@ -138,6 +142,7 @@ config.targets.mapping = Item(
                                          "open":     open,
                                          "folder":   folder,
                                          "ssh":      ssh,
+                                         "edit":      edit,
                                         },
                              )
 config.lang            = Section("Language section")
