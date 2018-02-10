@@ -124,6 +124,11 @@ cmd.map = {
     "treks":                            Key("x"),
     "yank":                             Key("y"),
     "zooch":                            Key("z"),
+
+    # common vim letter combos
+    "yank yank":                        Key("y,y"), # copy a line
+    "yank yank pooch":                  Key("y,y,p"), # duplicate a line
+    "dell dell":                        Key("d,d"), # delete a line
 }
 
 
