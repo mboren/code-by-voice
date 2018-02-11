@@ -129,6 +129,55 @@ cmd.map = {
     "yank yank":                        Key("y,y"), # copy a line
     "yank yank pooch":                  Key("y,y,p"), # duplicate a line
     "dell dell":                        Key("d,d"), # delete a line
+
+    # symbols
+    "dot":                              Key("dot"),
+    "splat":                            Key("asterisk"),
+    "Mandy":                            Key("ampersand"),
+    "cash":                             Key("dollar"),
+    "bang":                             Key("exclamation"),
+    "hook":                             Key("question"),
+    "hash":                             Key("hash"),
+    "grape":                            Key("percent"),
+    "pipe":                             Key("bar"),
+    "tick":                             Key("squote"),
+    "plus":                             Key("plus"),
+    "equals":                           Key("equal"),
+    "eagle":                            Key("equal"),
+    "minus":                            Key("minus"),
+    "quote":                            Key("dquote"),
+    "score":                            Key("underscore"),
+    "dash":                             Key("minus"),
+
+    # delay for colon is to work around a VSCode issue that mixes
+    # up certain characters when they are sent too fast.
+    "colon":                            Key("colon/0.3"),
+    "slash":                            Key("slash"),
+    "backslash":                        Key("backslash"),
+    "comma":                            Key("comma"),
+    "snail":                            Key("at"),
+    "hat":                              Key("caret"),
+    "backtick":                         Key("backtick"),
+    "tilde":                            Key("tilde"),
+    "semi":                             Text(";"),
+
+    "L'Engle":                          Key("langle"),
+    "Wrangle":                          Key("rangle"),
+    "lap":                              Key("lparen"),
+    "rap":                              Key("rparen"),
+    "lack":                             Key("lbracket"),
+    "rack":                             Key("rbracket"),
+    "lace":                             Key("lbrace"),
+    "race":                             Key("rbrace"),
+    "slap":                             Key("enter"),
+
+    # multi symbol stuff
+    "wide plus":                        Key("space, plus, space"),
+    "wide minus":                       Key("space, minus, space"),
+    "week will":                       Key("space, equal, space"),
+    "curry":                            Key("space, minus, rangle"),
+    "bit left":                         Key("langle,langle"),
+    "bit right":                        Key("rangle,rangle"),
 }
 
 
