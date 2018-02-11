@@ -38,6 +38,7 @@ cmd.map = {
     "home":                             Key("home"),
     "end":                              Key("end"),
 
+    "escape|snap":                      Key("escape/0.2"),
     "space [<n>]":                      release + Key("space:%(n)d"),
     "enter [<n>]":                      release + Key("enter:%(n)d"),
     "tab [<n>]":                        Key("tab:%(n)d"),
