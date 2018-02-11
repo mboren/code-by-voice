@@ -247,6 +247,68 @@ cmd.map = {
     "exposing":                         Text(" exposing ()") + Key("left"),
     "missive":                          Text("Msg"),
 
+    # vim specific stuff
+    "whiplash":                         Key("escape") + Key("colon, w, enter"),
+    "dune":                             Key("escape") + Key("o"),
+    "make include guard":               Key("escape") + Text("ea_H") + Key("escape") + Text("yiwi#ifndef ") + Key("escape") + Text("o#define ") + Key("escape") + Text("po#endif // ifndef ") + Key("escape,p,O,escape"),
+    "viewport":                         Key("escape, c-w"),
+    "go buff [<n>]":                    Key("escape, %(n)d, c-caret"),
+    "buff":                             Key("escape, colon, b, space"),
+    "list buffers":                     Key("escape, colon") + Text("ls") + Key("enter"),
+    "list all buffers":                 Key("escape, colon") + Text("ls!") + Key("enter"),
+    "next buff":                        Key("escape, colon, n, enter"),
+    "previous buff":                    Key("escape, colon, N, enter"),
+
+    # these commands get their own section because i love them
+    "chip":                             Key("c, i, lparen"),
+    "chick":                            Key("c, i, dquote"),
+
+    # working with git merge conflicts
+    #  I had a really horrific merge to deal with a while ago and i put this
+    #  together to make it easier to manage. I honestly don't remember how this
+    #  works and I'd be afraid to use it again, but I feel that it deserves a
+    #  place in my commit history.
+    "find headlines":                   Key("escape") + Text("/<<<<<<< HEAD") + Key("enter"),
+    "find midlines":                    Key("escape") + Text("/=======") + Key("enter"),
+    "find branch lines":                Key("escape") + Text("/>>>>>>>") + Key("enter"),
+
+    "comment matches":                  Key("escape") + Text(":g//normal 0i//") + Key("enter"),
+    "increase matches":                 Key("escape") + Text(":g//normal 0") + Key("c-v") + Key("c-a") + Key("enter"),
+    "decrease matches":                 Key("escape") + Text(":g//normal 0") + Key("c-v") + Key("c-x") + Key("enter"),
+    "record Mark merge":                Key("escape") + Text("qmk/<<<<<<<") + Key("enter") + Text("ma/=======") + Key("enter") + Text("mb/>>>>>>>") + Key("enter") + Text("mc'akq"),
+    "comment head":                     Key("escape") + Text("'aj") + Key("c-v") + Text("'bkI//head") + Key("escape") + Text("'ak"),
+    "comment branch":                   Key("escape") + Text("'bj") + Key("c-v") + Text("'ckI//branch") + Key("escape") + Text("'ak"),
+    "uncommon head":                    Key("escape") + Text(":%s/\\/\\/head//") + Key("enter"),
+    "uncommon branch":                  Key("escape") + Text(":%s/\\/\\/branch//") + Key("enter"),
+    "next merge":                       Key("escape") + Text("'cj@m"),
+    "previous merge":                   Key("escape") + Text("'ak?<<<<<") + Key("enter") + Text("k@m"),
+
+    # Excel stuff
+    "slide up":                         Key("cs-up"),
+    "slide right":                      Key("cs-right"),
+    "slide down":                       Key("cs-down"),
+    "slide left":                       Key("cs-left"),
+    "glide up":                         Key("c-up"),
+    "glide right":                      Key("c-right"),
+    "glide down":                       Key("c-down"),
+    "glide left":                       Key("c-left"),
+
+    # shell
+    "seedy":                            Key("c,d,space"),
+    "Petey":                            Key("p,u,s,h,d,space"),
+    "slash user":                       Text("/usr"),
+    "slash local":                      Text("/local"),
+    "slash bin":                        Text("/bin"),
+    "slash upper":                      Text("/.."),
+    "cat":                              Key("c,a,t,space"),
+    "vim gulf":                         Text("vimgolf"),
+
+    # virtual desktops
+    "barge":                            Key("wc-left"),
+    "wacker":                           Key("wc-right"),
+
+    # console
+    "sofa":                             Key("c-backtick"),
 
 }
 
