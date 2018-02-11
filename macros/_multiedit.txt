@@ -323,6 +323,7 @@ cmd.map = {
 def format_snake(dictation):          # Function name must start with "format_".
     """ snake <dictation> """         # Docstring defining spoken-form.
     text = str(dictation).lower()             # Get written-form of dictated text.
+    text = text.replace('\\', ' ')
     return "_".join(text.split(" "))  # Put underscores between words.
 
 def format_jive(dictation):          # Function name must start with "format_".
