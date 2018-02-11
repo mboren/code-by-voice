@@ -178,6 +178,76 @@ cmd.map = {
     "curry":                            Key("space, minus, rangle"),
     "bit left":                         Key("langle,langle"),
     "bit right":                        Key("rangle,rangle"),
+
+    # preprocessor directives
+    "hash include angle":               Text("#include ") + Key("langle") + Key("rangle") + Key("left"),
+    "hash include quote":               Text("#include ") + Key("dquote,dot,h,dquote,left,left,left"),
+    "hash if in deaf":                  Text("#ifndef "),
+    "hash if":                          Text("#if "),
+    "hash define":                      Text("#define "),
+    "hash end if":                      Text("#endif "),
+    "preprocessor start":               Text("#if 0"),
+    "preprocessor stop":                Text("#endif "),
+
+    # convenience macros
+    "done":                             Key("end") + Text(";") + Key("enter"),
+    "block":                            Key("end") + Key("enter") + Key("lbrace") + Key("enter") + Key("rbrace") + Key("up") + Key("enter"),
+
+    # C++ keywords
+    "return":                           Text("return "),
+    "class":                            Text("class "),
+    "struct":                           Text("struct "),
+    "double":                           Text("double "),
+    "bool":                             Text("bool "),
+    "const":                            Text("const "),
+    "mint":                             Text("int "),
+    "void":                             Text("void "),
+    "if line":                          Text("if") + Key("lparen,rparen,left"),
+    "else":                             Text("else"),
+    "while loop":                       Text("while") + Key("lparen,rparen,left"),
+    "for loop":                         Text("for") + Key("lparen,rparen,left"),
+    "big for loop":                     Text("for()") + Key("enter,lbrace,enter,rbrace,up,up,right,right,right"),
+    "true":                             Text("true"),
+    "false":                            Text("false"),
+
+    # no matter how hard i try, i can't get dragon to recognize the word 'null'
+    "noodle":                           Text("NULL"),
+    "noodle pointer":                   Text("nullptr"),
+
+    # easy logging++
+    "log info":                         Key("L,O,G,lparen,I,N,F,O,rparen"),
+    "log info line":                    Text("LOG(INFO) << ;") + Key("left"),
+
+    # standard library
+    "STD string":                       Text("std::string"),
+    "sea out":                          Text("std::cout << "),
+    "end line":                         Text(" << std::endl"),
+    "STD vector":                       Text("std::vector"),
+    "STD":                              Text("std::"),
+    "eye oh stream":                    Text("iostream"),
+
+    # Google test
+    "big test":                         Text("TEST()") + Key("left"),
+    "expect equal":                     Text("EXPECT_EQ();") + Key("left") + Key("left"),
+    "expect float equal":               Text("EXPECT_FLOAT_EQ();") + Key("left") + Key("left"),
+    "expect double equal":              Text("EXPECT_DOUBLE_EQ();") + Key("left") + Key("left"),
+
+    # Python
+    "pie deaf":                         Text("def "),
+    "pie for":                          Text("for "),
+    "pie range":                        Text("range"),
+    "pie ranges":                       Text("range()") + Key("left"),
+    "in":                               Text(" in "),
+    "piff":                             Text("if "),
+
+    "self":                             Text("self"),
+
+    # Elm
+    "import":                           Text("import "),
+    "exposing":                         Text(" exposing ()") + Key("left"),
+    "missive":                          Text("Msg"),
+
+
 }
 
 
